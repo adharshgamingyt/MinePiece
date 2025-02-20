@@ -11,7 +11,7 @@
 		"homepage": "/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/minepiece/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.adharsh.minepiece.MinePieceDataGenerator"
+		],
+		"client": [
+			"net.adharsh.minepiece.MinePieceClient"
 		]
 	},
 	"mixins": [
