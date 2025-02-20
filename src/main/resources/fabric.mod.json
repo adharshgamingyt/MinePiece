@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "minepiece",
+	"version": "${version}",
+	"name": "MinePiece",
+	"description": "This is an One piece inspired mod for minecraft!",
+	"authors": [
+		"Adharsh"
+	],
+	"contact": {
+		"homepage": "/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minepiece/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.adharsh.minepiece.MinePiece"
+		],
+		"fabric-datagen": [
+			"net.adharsh.minepiece.MinePieceDataGenerator"
+		]
+	},
+	"mixins": [
+		"minepiece.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
