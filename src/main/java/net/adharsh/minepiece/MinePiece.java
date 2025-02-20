@@ -1,5 +1,8 @@
 package net.adharsh.minepiece;
 
+import net.adharsh.minepiece.Block.ModBlocks;
+import net.adharsh.minepiece.item.ModItemGroup;
+import net.adharsh.minepiece.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +15,10 @@ public class MinePiece implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("MinePiece initialization!");
+		ModItemGroup.registerModItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 	}
 }
